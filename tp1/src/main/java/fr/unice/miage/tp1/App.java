@@ -2,23 +2,27 @@ package fr.unice.miage.tp1;
 
 import java.io.File;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    public static void main( String[] args )
-    {
-    	File file = new File(".");
-        String listeFile[] = file.list();      
- 
-        if (listeFile != null) {         
-            for (int i = 0; i < listeFile.length; i++) {
-                System.out.println(listeFile[i]);
+    public static void main( String[] args ){
+    	findPathContent(".");
+    }
+    
+    @SuppressWarnings("unused")
+	public static void findPathContent(String path) {
+    	File file = new File(path);
+        File[] listeFile = file.listFiles();     
+        
+        if(file != null) {
+        	for(File f : listeFile) {
+            	if(f.isDirectory()) {
+            		findPathContent(f.getPath());
+            	}
+            	System.out.println(f.toString());
             }
-        } else {
-            System.err.println("File invalide");
+        }else {
+        	System.out.println("Le chemin est invalide !");
         }
+        
     }
 }
