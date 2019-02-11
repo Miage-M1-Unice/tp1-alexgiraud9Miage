@@ -3,10 +3,10 @@ package fr.unice.miage.tp1;
 import java.io.File;
 import java.io.FilenameFilter;
 
-public class App 
+public class Liste3 
 {
     public static void main( String[] args ){
-    	App app = new App();
+    	Liste3 app = new Liste3();
     	app.findPathContent(".");
     }
     
