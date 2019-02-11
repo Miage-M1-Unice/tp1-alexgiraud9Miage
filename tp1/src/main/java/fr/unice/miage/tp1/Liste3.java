@@ -13,22 +13,9 @@ public class Liste3
 	@SuppressWarnings("unused")
 	public void findPathContent(String path) {
 		File file = new File(path);
+		Filter monFilter = new Filter(".java");
 		
-		FilenameFilter filter = new FilenameFilter() {
-			public boolean accept(File dir, String name) {
-				boolean resultat = false;
-
-				File f = new File(dir + "\\" + name);
-
-				if(f.isDirectory() || name.toLowerCase().endsWith(".java")) {
-					resultat = true;
-				}
-
-				return resultat;
-			}
-		};
-
-		File[] listeFile = file.listFiles(filter); 
+		File[] listeFile = file.listFiles(monFilter.getFilter()); 
 
 
 		if(file != null) {
