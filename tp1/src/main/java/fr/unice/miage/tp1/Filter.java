@@ -3,6 +3,10 @@ package fr.unice.miage.tp1;
 import java.io.File;
 import java.io.FilenameFilter;
 
+//**********************************//
+// Code relatif à l'éxercice 1.a.3 : //
+// **********************************//
+
 public class Filter {
 	private FilenameFilter filter = null;
 	

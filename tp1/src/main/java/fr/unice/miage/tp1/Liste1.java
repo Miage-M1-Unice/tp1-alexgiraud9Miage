@@ -5,6 +5,10 @@ import java.io.File;
 public class Liste1 
 {
     public static void main( String[] args ){
+    	// **********************************//
+    	// Code relatif à l'éxercice 1.a.1 : //
+    	// **********************************//
+    	
     	File file = new File(".");
         String listeFile[] = file.list();      
 

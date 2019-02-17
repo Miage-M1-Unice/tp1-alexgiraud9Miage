@@ -5,6 +5,9 @@ import java.io.File;
 public class Liste2 
 {
     public static void main( String[] args ){
+    	// **********************************//
+    	// Code relatif à l'éxercice 1.a.2 : //
+    	// **********************************//
     	Liste2 liste = new Liste2();
     	liste.findPathContent(".");
     }

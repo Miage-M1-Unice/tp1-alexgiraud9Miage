@@ -1,7 +1,6 @@
 package fr.unice.miage.tp1;
 
 import java.io.File;
-import java.io.FilenameFilter;
 
 public class Liste3 
 {
@@ -12,6 +11,10 @@ public class Liste3
 
 	@SuppressWarnings("unused")
 	public void findPathContent(String path) {
+		// **********************************//
+    	// Code relatif à l'éxercice 1.a.3 : //
+    	// **********************************//
+		
 		File file = new File(path);
 		Filter monFilter = new Filter(".java");
 		
